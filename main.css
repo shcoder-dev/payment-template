@@ -47,7 +47,7 @@ body {
     grid-template-columns: auto auto;
     grid-template-rows: 90px 90px 90px;
     grid-template-areas: "name name""number number""expiration security";
-    max-width: 400px;
+    /*max-width: 400px;*/
     padding: 20px;
     color: #707070;
 }

@@ -7,7 +7,7 @@ const securitycode = document.getElementById('securitycode');
 const output = document.getElementById('output');
 const ccicon = document.getElementById('ccicon');
 const ccsingle = document.getElementById('ccsingle');
-const generatecard = document.getElementById('generatecard');
+// const generatecard = document.getElementById('generatecard');
 
 
 let cctype = null;
@@ -196,24 +196,24 @@ cardnumber_mask.on("accept", function () {
 
 
 
-//Generate random card number from list of known test numbers
-const randomCard = function () {
-    let testCards = [
-        '4000056655665556',
-        '5200828282828210',
-        '371449635398431',
-        '6011000990139424',
-        '30569309025904',
-        '3566002020360505',
-        '6200000000000005',
-        '6759649826438453',
-    ];
-    let randomNumber = Math.floor(Math.random() * testCards.length);
-    cardnumber_mask.unmaskedValue = testCards[randomNumber];
-}
-generatecard.addEventListener('click', function () {
-    randomCard();
-});
+// //Generate random card number from list of known test numbers
+// const randomCard = function () {
+//     let testCards = [
+//         '4000056655665556',
+//         '5200828282828210',
+//         '371449635398431',
+//         '6011000990139424',
+//         '30569309025904',
+//         '3566002020360505',
+//         '6200000000000005',
+//         '6759649826438453',
+//     ];
+//     let randomNumber = Math.floor(Math.random() * testCards.length);
+//     cardnumber_mask.unmaskedValue = testCards[randomNumber];
+// }
+// generatecard.addEventListener('click', function () {
+//     randomCard();
+// });
 
 
 // CREDIT CARD IMAGE JS
